@@ -22,7 +22,7 @@ function primeNum() {
   while (length > randomPrime.length) {
     randomPrime.push(number[Math.floor(Math.random() * number.length)]);
   }
-  primeGen.value = randomPrime.join("");
+  primeGen.value = randomPrime.join(" ");
 }
 
 primeNum();
