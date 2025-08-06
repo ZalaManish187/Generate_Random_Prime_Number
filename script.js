@@ -1,9 +1,9 @@
 const primeGen = document.getElementById("prime");
-const length = 5;
 
 function primeNum() {
   let start = document.getElementById("start").value;
   let second = document.getElementById("second").value;
+  let length = document.getElementById("count").value;
   let number = [];
   for (let i = start; i <= second; i++) {
     let isPrime = true;
@@ -19,10 +19,10 @@ function primeNum() {
   }
 
   let randomPrime = [];
-  while (randomPrime.length < length) {
+  while (length > randomPrime.length) {
     randomPrime.push(number[Math.floor(Math.random() * number.length)]);
   }
-  primeGen.value = randomPrime.join("\n");
+  primeGen.value = randomPrime.join(" ");
 }
 
 primeNum();
