@@ -21,11 +21,15 @@ body {
     margin-top: 20px;
     width: 100%;
     max-width: 500px;
-    height: 40vh;
+    height: 10vh;
     padding: 50px;
     font-size: 20px;
     color: #000000;
     border-radius: 5px;
+}
+
+.display textarea {
+    scrollbar-width: none;
 }
 
 
@@ -71,14 +75,15 @@ button:active {
         justify-content: center;
         align-items: center;
     }
-  
-    #count{
-        width:100%;
+
+    #count {
+        width: 100%;
         max-width: 100%;
-      
+
     }
-    button{
-        width:100%;
+
+    button {
+        width: 100%;
         max-width: 100%;
     }
 }
